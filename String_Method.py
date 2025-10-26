@@ -1,4 +1,4 @@
 def capitalize(txt):
-    x = txt.capitalize()
+    x = chr(ord(txt[0])-32)+ txt[1:]
     print(x)
     return x
