@@ -41,3 +41,15 @@ def center(txt, n):
     txt = " "*x + txt + " "*x
     return txt
     print(txt)
+
+'''Count operation: Doing count operation in string without using 
+built in method such as str.count().
+txt: is passed through the function which is the main string
+x: is the substring of the main string i.e. txt'''
+
+def count(txt, x):
+    cnt = 0
+    for i in range((len(txt) - len(x)) + 1):
+        if txt[i:i+len(x)] == x:
+            cnt += 1
+    return cnt
