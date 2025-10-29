@@ -1,3 +1,3 @@
-from String_Method import capitalize2
+from String_Method import capitalize3
 txt = "hello, and welcome to my world."
-capitalize2(txt)
+capitalize3(txt)
