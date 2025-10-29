@@ -77,22 +77,6 @@ def capitalize3(txt):
         print("No ascii character")
     return x, y, z, cap, txt
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 # String creates a string of x characters with the character in the center
 ''' txt: Required here to pass through a string will be centred according to the length"
     n = Basically dictates length of a string'''
@@ -113,3 +97,16 @@ def count(txt, x):
         if txt[i:i+len(x)] == x:
             cnt += 1
     return cnt
+
+# Looking for characters that ends with the specified character
+def ends_with(txt, chr):
+    ''' Looking for a specied item for instance in this string looking for values ending
+    with specific character'''
+    cnt = 0
+    for i in range((len(txt) - len(chr)) + 1): 
+        if txt[i:i+len(chr)] == chr:
+            cap = chr
+            z = True
+            print(cap, i, z)
+            cnt += 1
+    return cap, i, z
