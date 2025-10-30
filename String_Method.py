@@ -129,3 +129,17 @@ def ends_with2(txt, x):
     
     cnt +=1
     return aa or bb
+
+# Looking for tabs in string and multiplying it
+
+def expand_tabs(txt, x):
+    ''' Looking for a tab and then multiplying it with 
+    specified numbers to expand tab. In python tab length
+    is considered as 1 regardless how long the tab is despite 
+    being multiplied by'''
+    cnt = 0 
+    for i in range(len(txt)): 
+        if '\t' in txt: 
+            '\t' * x 
+        cnt += 1
+    return txt
