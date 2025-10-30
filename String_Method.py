@@ -101,7 +101,8 @@ def count(txt, x):
 # Looking for characters that ends with the specified character
 def ends_with(txt, x):
     ''' Looking for a specied item for instance in this string looking for values ending
-    with specific character'''
+    with specific character  - first method looks for specifc items and 
+    looks for it'''
     cnt = 0
     for i in range((len(txt) - len(x)) + 1): 
         if txt[i:i+len(x)] == x:
@@ -112,3 +113,19 @@ def ends_with(txt, x):
         
         cnt += 1
     return y or z
+
+# Looks for charcaters that are ending with speciic characters
+
+def ends_with2(txt, x): 
+    ''' Looking for characters ending with specific characters'''
+    cnt = 0
+    aa=bb=None
+    for i in txt[::-1]: 
+        if txt[-(len(x)):] == x:
+            aa = True
+            break
+        else:
+            bb = False
+    
+    cnt +=1
+    return aa or bb
