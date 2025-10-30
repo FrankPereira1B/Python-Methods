@@ -143,3 +143,11 @@ def expand_tabs(txt, x):
             '\t' * x 
         cnt += 1
     return txt
+# Looking for a position of a word or a character in a string
+
+def find(txt, word):
+    x = None
+    for i in range((len(txt) - len(word)) + 1):
+        if txt[i:i+len(word)] == word:
+            x = i
+    return x
