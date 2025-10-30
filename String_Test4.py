@@ -2,5 +2,6 @@
 
 from String_Method import ends_with
 txt = "Hello, welcome to my world."
-chr = "."
-res = ends_with(txt, chr)
+x = "."
+res = ends_with(txt, x)
+print(res)

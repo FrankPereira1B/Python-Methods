@@ -99,14 +99,16 @@ def count(txt, x):
     return cnt
 
 # Looking for characters that ends with the specified character
-def ends_with(txt, chr):
+def ends_with(txt, x):
     ''' Looking for a specied item for instance in this string looking for values ending
     with specific character'''
     cnt = 0
-    for i in range((len(txt) - len(chr)) + 1): 
-        if txt[i:i+len(chr)] == chr:
-            cap = chr
-            z = True
-            print(cap, i, z)
-            cnt += 1
-    return cap, i, z
+    for i in range((len(txt) - len(x)) + 1): 
+        if txt[i:i+len(x)] == x:
+            y = True
+            break
+    else: 
+        z = False
+        
+        cnt += 1
+    return y or z
