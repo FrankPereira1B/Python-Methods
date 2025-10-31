@@ -146,6 +146,8 @@ def expand_tabs(txt, x):
 # Looking for a position of a word or a character in a string
 
 def find(txt, word):
+    '''Finding a position of a word in a string. In this mehtod, we need to pass through
+    txt: String and a Word: substring of a string'''
     x = None
     for i in range((len(txt) - len(word)) + 1):
         if txt[i:i+len(word)] == word:
