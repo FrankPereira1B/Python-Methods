@@ -153,3 +153,34 @@ def find(txt, word):
         if txt[i:i+len(word)] == word:
             x = i
     return x
+
+
+# Using format method to add values or insert into String
+
+def format_(txt, price): 
+    ''' String is immutable so it is difficult add characters into a string
+    I have used to locate the position of Dict characters and then interposed
+    the targeted characters'''
+
+    for i in range(len(txt)): 
+        if txt[i] == "{": 
+            x = i
+            print(i)
+        if txt[i] == "}": 
+            y = i
+            print(i)
+            break
+    a = txt[:x]
+    print(a)
+
+    b = txt[y+1:]
+    print(b)
+
+    txt = a + str(price) + b
+    return txt
+        
+txt = "For only {} dollars!"
+price = 49 
+res = format_(txt, price)
+print(res)
+        
