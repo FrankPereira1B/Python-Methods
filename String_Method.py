@@ -183,4 +183,6 @@ txt = "For only {} dollars!"
 price = 49 
 res = format_(txt, price)
 print(res)
-        
+
+
+#Finding an index of a character
