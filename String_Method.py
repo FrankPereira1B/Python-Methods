@@ -178,11 +178,13 @@ def format_(txt, price):
 
     txt = a + str(price) + b
     return txt
-        
-txt = "For only {} dollars!"
-price = 49 
-res = format_(txt, price)
-print(res)
-
 
 #Finding an index of a character
+
+def index_(txt, x):
+    ''' Looking for an index of the first charcter of the substring'''
+    for i in range(len(txt)):
+        if x[0] == txt[i]:
+            ind = i 
+            break
+    return ind
