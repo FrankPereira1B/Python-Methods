@@ -188,3 +188,19 @@ def index_(txt, x):
             ind = i 
             break
     return ind
+
+# Looking to see if there both string and numeric characters in the string
+def alnum_(txt):
+    '''Looking for charcaters i.e. both string and numeric characters in the substring'''
+    a = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z', 'A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z']
+    b = ['0','1','2','3','4','5','6','7','8','9']
+    for i in range(len(txt)):
+        if txt[i] not in a: 
+            if txt[i] not in b: 
+                x = False
+                break
+        else: 
+            x = True
+    return x
+
+#
