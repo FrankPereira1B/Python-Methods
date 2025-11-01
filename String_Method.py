@@ -203,4 +203,16 @@ def alnum_(txt):
             x = True
     return x
 
+# Looking for characters that are only alphabetic charcaters in a string
+def alpha_(txt):
+    '''Looking for charcaters that are only alphabetic charcaters'''
+    a = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z', 'A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z']
+    for i in range(len(txt)):
+        if txt[i] not in a:  
+                x = False
+                break
+        else: 
+            x = True
+    return x
+
 #
