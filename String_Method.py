@@ -228,4 +228,25 @@ def ascii_(txt):
             x = False
     return x
 
-# 
+# Looking for decimal characters in a string
+
+def deci_(txt): 
+    ''' Looking for decimal characters in a string'''
+    deci_ = ['0', '1', '2', '3', '4', '5', '6', '7', '8', '9'] 
+    for i in range(len(txt)): 
+        if txt[i] in deci_: 
+            x = True 
+        else: 
+            x = False 
+    return x
+        
+# Looking for digits in a string
+def dgt_(txt): 
+    ''' Looking for digits in a string'''
+    digits = ['0', '1', '2', '3', '4', '5', '6', '7', '8', '9'] 
+    for i in range(len(txt)): 
+        if txt[i] in digits: 
+            x = True 
+        else: 
+            x = False 
+    return x
