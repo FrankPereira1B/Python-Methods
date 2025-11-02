@@ -250,3 +250,23 @@ def dgt_(txt):
         else: 
             x = False 
     return x
+
+# Looking for string characters are valid identifier
+
+def identifier_(txt): 
+    ''' Looking for characters that are valid identifier
+    The first characters shouldnt be digits'''
+    chars = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z', 'A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z', '0', '1', '2', '3', '4', '5', '6', '7', '8', '9', '_']
+    digits = ['0', '1', '2', '3', '4', '5', '6', '7', '8', '9'] 
+    for i in range(len(txt)):
+        if txt[i] in digits:
+            x = False 
+            break
+        for i in range(len(txt)): 
+            if txt[i] in chars: 
+                x = True 
+            else:
+                x = False
+    return x
+
+#
