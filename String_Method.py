@@ -310,4 +310,16 @@ def print_char(txt):
             x = False
             break
     return x
-# 
+
+# Looking to see if all characters in the string are whitespces
+def isspace_(txt): 
+    ''' Looking for characters in a string are all whitespaces'''
+    for i in range(len(txt)): 
+        if txt[i] == " ": 
+            x = True 
+        else:
+            x = False
+            break
+    return x
+
+#
