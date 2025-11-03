@@ -269,4 +269,16 @@ def identifier_(txt):
                 x = False
     return x
 
-#
+#  Looking to see characters in a string are lower alphabets
+def lower_(txt): 
+    ''' Looking for alphabets in a string are lower or not'''
+    chars = ['0', '1', '2', '3', '4', '5', '6', '7', '8', '9', 'a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z', '!', '"', '#', '$', '%', '&', "'", '(', ')', '*', '+', ',', '-', '.', '/', ':', ';', '<', '=', '>', '?', '@', '[', '\\', ']', '^', '_', '`', '{', '|', '}', '~', ' ', '\t', '\n', '\r', '\x0b', '\x0c']
+    for i in range(len(txt)): 
+        if txt[i] in chars: 
+            x = True 
+        else: 
+            x = False 
+            break
+    return x
+
+# 
