@@ -281,4 +281,17 @@ def lower_(txt):
             break
     return x
 
-# 
+# Checking if characters in a string are numeric or not
+
+def numeric_(txt):
+    ''' Checking if characters in a string are numeric or not'''
+    numeric_letters = ['0','1','2','3','4','5','6','7','8','9']
+    for i in range(len(txt)): 
+        if txt[i] in numeric_letters: 
+            x = True
+        else:
+            x = False
+            break
+    return x 
+
+#
