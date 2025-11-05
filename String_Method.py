@@ -322,4 +322,28 @@ def isspace_(txt):
             break
     return x
 
-##
+# Changing all first letters in a string to  capital letter
+
+def title_(txt):
+    ''' changing first letters of a string to capital letters'''
+    chr_list = {'A':'a', 'B':'b', 'C':'c', 'D':'d', 'E':'e', 'F':'f', 'G':'g', 'H':'h', 'I':'i', 'J':'j', 'K':'k', 'L':'l', 'M':'m', 'N':'n', 'O':'o', 'P':'p', 'Q':'q', 'R':'r', 'S':'s', 'T':'t', 'U':'u', 'V':'v', 'W':'w', 'X':'x', 'Y':'y', 'Z':'z'} 
+    for i in range(len(txt)): 
+        if txt[i] == " ": 
+            z = i + 1 
+            if txt[z] in chr_list.values():
+                for key, value in chr_list.items():
+                    if txt[z] == value:   # <-- fixed here
+                        cap = key
+                        new_txt = txt[:z] + cap + txt[z+1:]
+                        txt = new_txt
+                        break
+            if new_txt[0] in chr_list.values():
+                for key, value in chr_list.items():
+                    if new_txt[0] == value:
+                        cap = key
+                        new_txt = cap + new_txt[1:]
+                        break
+    return new_txt
+
+
+#
