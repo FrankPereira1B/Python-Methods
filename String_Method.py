@@ -359,4 +359,15 @@ def isupper_(txt):
             break
     return x
 
-##
+#Looking to join items in tuple or list using a separator
+
+def join_(txt):
+    '''Looking to join items in tuple or list using a separator'''
+    new_txt = ""
+    for i in range(len(txt)): 
+        new_txt = new_txt + "#"+ txt[i]
+        print(new_txt)
+    new_txt = new_txt[1:]
+    return new_txt
+
+#
