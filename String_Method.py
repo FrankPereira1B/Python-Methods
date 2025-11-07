@@ -370,4 +370,14 @@ def join_(txt):
     new_txt = new_txt[1:]
     return new_txt
 
-######
+# Looking at the string and creating left justfied string with specified length
+
+def ljust_(txt, k):
+    for i in range(k - len(txt)):
+        if i == k:
+            break
+        else:
+            txt = txt + " "
+    return txt
+
+# 
