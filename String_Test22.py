@@ -4,3 +4,4 @@ k = 20
 txt = "banana"
 res = ljust_(txt, k)
 print(res)
+
