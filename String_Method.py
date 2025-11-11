@@ -380,4 +380,19 @@ def ljust_(txt, k):
             txt = txt + " "
     return txt
 
-#################################################
+# Converting all upper cases into lower characters
+def lower_(txt):
+    ''' Looking to convert all upper cases into lower cases'''
+    a = ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z']
+    b = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z']
+    new_txt = ""
+    for i in range(len(txt)):
+        char = txt[i]
+        if char in a:
+            j = 0 
+            for upper in a:
+                if char == upper:
+                    char = b[j]
+                j += 1
+        new_txt += char
+    return new_txt
